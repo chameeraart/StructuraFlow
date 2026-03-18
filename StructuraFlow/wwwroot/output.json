@@ -1,0 +1,360 @@
+{
+  "Columns": [
+    {
+      "Id": "C101",
+      "Height": 400.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C102",
+      "Height": 400.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C103",
+      "Height": 400.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C104",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C105",
+      "Height": 400.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C106",
+      "Height": 500.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C107",
+      "Height": 300.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C108",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C109",
+      "Height": 500.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C110",
+      "Height": 400.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C111",
+      "Height": 400.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C112",
+      "Height": 300.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C113",
+      "Height": 500.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C114",
+      "Height": 400.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C115",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C116",
+      "Height": 500.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C117",
+      "Height": 400.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C118",
+      "Height": 400.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C119",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C120",
+      "Height": 500.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C121",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C122",
+      "Height": 500.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C123",
+      "Height": 400.0,
+      "Width": 500.0
+    },
+    {
+      "Id": "C124",
+      "Height": 300.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C125",
+      "Height": 500.0,
+      "Width": 300.0
+    },
+    {
+      "Id": "C110",
+      "Height": -400.0,
+      "Width": 400.0
+    },
+    {
+      "Id": "C105",
+      "Height": 400.0,
+      "Width": 400.0
+    }
+  ],
+  "Beams": [
+    {
+      "Id": "B201",
+      "StartColumn": "C123",
+      "EndColumn": "C101",
+      "Length": 300.0
+    },
+    {
+      "Id": "B202",
+      "StartColumn": "C107",
+      "EndColumn": "C114",
+      "Length": 300.0
+    },
+    {
+      "Id": "B203",
+      "StartColumn": "C105",
+      "EndColumn": "C122",
+      "Length": 300.0
+    },
+    {
+      "Id": "B204",
+      "StartColumn": "C121",
+      "EndColumn": "C124",
+      "Length": 250.0
+    },
+    {
+      "Id": "B205",
+      "StartColumn": "C125",
+      "EndColumn": "C101",
+      "Length": 250.0
+    },
+    {
+      "Id": "B206",
+      "StartColumn": "C104",
+      "EndColumn": "C108",
+      "Length": 250.0
+    },
+    {
+      "Id": "B207",
+      "StartColumn": "C121",
+      "EndColumn": "C108",
+      "Length": 300.0
+    },
+    {
+      "Id": "B208",
+      "StartColumn": "C102",
+      "EndColumn": "C107",
+      "Length": 300.0
+    },
+    {
+      "Id": "B209",
+      "StartColumn": "C124",
+      "EndColumn": "C108",
+      "Length": 250.0
+    },
+    {
+      "Id": "B210",
+      "StartColumn": "C107",
+      "EndColumn": "C102",
+      "Length": 250.0
+    },
+    {
+      "Id": "B211",
+      "StartColumn": "C114",
+      "EndColumn": "C125",
+      "Length": 250.0
+    },
+    {
+      "Id": "B212",
+      "StartColumn": "C120",
+      "EndColumn": "C114",
+      "Length": 300.0
+    },
+    {
+      "Id": "B213",
+      "StartColumn": "C107",
+      "EndColumn": "C116",
+      "Length": 300.0
+    },
+    {
+      "Id": "B214",
+      "StartColumn": "C110",
+      "EndColumn": "C115",
+      "Length": 250.0
+    },
+    {
+      "Id": "B215",
+      "StartColumn": "C109",
+      "EndColumn": "C113",
+      "Length": 300.0
+    },
+    {
+      "Id": "B216",
+      "StartColumn": "C120",
+      "EndColumn": "C105",
+      "Length": 300.0
+    },
+    {
+      "Id": "B217",
+      "StartColumn": "C109",
+      "EndColumn": "C122",
+      "Length": 250.0
+    },
+    {
+      "Id": "B218",
+      "StartColumn": "C124",
+      "EndColumn": "C106",
+      "Length": 300.0
+    },
+    {
+      "Id": "B219",
+      "StartColumn": "C115",
+      "EndColumn": "C124",
+      "Length": 250.0
+    },
+    {
+      "Id": "B220",
+      "StartColumn": "C105",
+      "EndColumn": "C115",
+      "Length": 250.0
+    },
+    {
+      "Id": "B999",
+      "StartColumn": "C101",
+      "EndColumn": "C999",
+      "Length": 300.0
+    },
+    {
+      "Id": "B998",
+      "StartColumn": "C105",
+      "EndColumn": "C105",
+      "Length": 300.0
+    }
+  ],
+  "Slabs": [
+    {
+      "Id": "S301",
+      "Thickness": 220.0,
+      "Level": "L1"
+    },
+    {
+      "Id": "S302",
+      "Thickness": 200.0,
+      "Level": "L3"
+    },
+    {
+      "Id": "S303",
+      "Thickness": 200.0,
+      "Level": "L3"
+    },
+    {
+      "Id": "S304",
+      "Thickness": 180.0,
+      "Level": "L1"
+    },
+    {
+      "Id": "S305",
+      "Thickness": 180.0,
+      "Level": "L3"
+    },
+    {
+      "Id": "S306",
+      "Thickness": 200.0,
+      "Level": "L1"
+    },
+    {
+      "Id": "S307",
+      "Thickness": 200.0,
+      "Level": "L3"
+    },
+    {
+      "Id": "S308",
+      "Thickness": 220.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S309",
+      "Thickness": 200.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S310",
+      "Thickness": 200.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S311",
+      "Thickness": 220.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S312",
+      "Thickness": 180.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S313",
+      "Thickness": 180.0,
+      "Level": "L1"
+    },
+    {
+      "Id": "S314",
+      "Thickness": 220.0,
+      "Level": "L3"
+    },
+    {
+      "Id": "S315",
+      "Thickness": 180.0,
+      "Level": "L1"
+    },
+    {
+      "Id": "S350",
+      "Thickness": -200.0,
+      "Level": "L2"
+    },
+    {
+      "Id": "S301",
+      "Thickness": 200.0,
+      "Level": "L2"
+    }
+  ]
+}

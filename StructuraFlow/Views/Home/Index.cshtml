@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Upload Structural Files";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Engineering Data Automation Tool</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <div class="card shadow-sm border-primary mb-4">
+                <div class="card-header bg-primary text-white">
+                    <i class="bi bi-upload"></i> Upload Your Files
+                </div>
+                <div class="card-body">
+                    <form asp-action="Upload" method="post" enctype="multipart/form-data">
+
+                        <!-- Columns File -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold" for="columnsFile">
+                                <i class="bi bi-columns-gap"></i> Columns File
+                            </label>
+                            <input type="file" name="columnsFile" id="columnsFile" class="form-control" accept=".xlsx,.xls" required />
+                        </div>
+
+                        <!-- Beams File -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold" for="beamsFile">
+                                <i class="bi bi-diagram-2-fill"></i> Beams File
+                            </label>
+                            <input type="file" name="beamsFile" id="beamsFile" class="form-control" accept=".xlsx,.xls" required />
+                        </div>
+
+                        <!-- Slabs File -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold" for="slabsFile">
+                                <i class="bi bi-grid-fill"></i> Slabs File
+                            </label>
+                            <input type="file" name="slabsFile" id="slabsFile" class="form-control" accept=".xlsx,.xls" required />
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-check-circle"></i> Process Files
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center text-muted">
+                Supported file types: <strong>.xlsx</strong>, <strong>.xls</strong>. Max file size: 10MB.
+            </div>
+
+        </div>
+    </div>
+</div>
