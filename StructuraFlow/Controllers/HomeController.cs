@@ -50,13 +50,16 @@ namespace StructuraFlow.Controllers
 
             var errors = _validator.Validate(columns, beams, slabs, config);
 
+            var filePath2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "error.json");
+            var json2 = _jsonExporter.ExportToJsonErrors(errors, filePath2);
+
             ViewBag.Errors = errors;
             ViewBag.Columns = columns;
             ViewBag.Beams = beams;
             ViewBag.Slabs = slabs;
 
             // Save JSON file
-            // ? Create output model
+            // Create output model
             var output = new OutputModel
             {
                 Columns = columns,
@@ -70,6 +73,21 @@ namespace StructuraFlow.Controllers
             ViewBag.Json = json;
 
             return View("Result");
+        }
+
+
+        [HttpGet]
+        public IActionResult DownloadErrors()
+        {
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "error.json");
+
+            if (!System.IO.File.Exists(filePath))
+                return NotFound("Validation errors file not found.");
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+
+            // Return file for download
+            return File(fileBytes, "application/json", "error.json");
         }
     }
 }

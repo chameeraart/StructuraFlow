@@ -1,0 +1,11 @@
+[
+  "Duplicate Column ID: C105",
+  "Duplicate Column ID: C110",
+  "Duplicate Slab ID: S301",
+  "Negative dimension in Column C110",
+  "Negative thickness in Slab S350",
+  "Beam B999 end column not found: C999",
+  "Beam B998 start and end column cannot be same",
+  "Column C110 height -400 is below minimum 11",
+  "Slab S350 thickness -200 is below minimum 4"
+]

@@ -1,34 +1,56 @@
-﻿<div class="container mt-5">
+﻿@{
+    ViewData["Title"] = "Validation Report";
+}
 
-    <h3>Validation Report</h3>
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Engineering Data Automation Tool</h2>
 
-    @if (ViewBag.Errors.Count == 0)
-    {
-        <div class="alert alert-success">
-            No validation errors
+    <!-- Validation Report Card -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-danger text-white">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>Validation Report
         </div>
-    }
-    else
-    {
-        <ul class="list-group">
-            @foreach (var err in ViewBag.Errors)
+        <div class="card-body">
+            @if (ViewBag.Errors != null && ViewBag.Errors.Count > 0)
             {
-                <li class="list-group-item list-group-item-danger">
-                    @err
-                </li>
+                <ul class="list-group mb-3">
+                    @foreach (var err in ViewBag.Errors)
+                    {
+                        <li class="list-group-item list-group-item-danger">
+                            <i class="bi bi-x-circle-fill me-2"></i> @err
+                        </li>
+                    }
+                </ul>
+
+                <a class="btn btn-warning" asp-controller="Home" asp-action="DownloadErrors">
+                    <i class="bi bi-download me-1"></i> Download Errors JSON
+                </a>
             }
-        </ul>
-    }
+            else
+            {
+                <div class="alert alert-success d-flex align-items-center">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    No validation errors found.
+                </div>
+            }
+        </div>
+    </div>
 
+    <!-- JSON Output Card -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+            <i class="bi bi-file-earmark-code-fill me-2"></i>JSON Output
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <a href="/output.json" class="btn btn-success mb-3" download>
+                    <i class="bi bi-download me-1"></i> Download JSON
+                </a>
+            </div>
 
-    <a href="/output.json" class="btn btn-success mt-3" download>
-        Download JSON
-    </a>
-
-    <h3>JSON Output</h3>
-
-        <pre class="bg-dark text-white p-3">
-        @ViewBag.Json
-        </pre>
-
+            <pre class="bg-dark text-white p-3 rounded" style="max-height: 400px; overflow-y: auto;">
+@ViewBag.Json
+            </pre>
+        </div>
+    </div>
 </div>
